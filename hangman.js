@@ -107,7 +107,8 @@ randomName();
 guessedWord();
 
 document.addEventListener("keypress", (e) => {
-  if (!game_end) Guess(e.key.toUpperCase());
+  if (!game_end) e.keyCode == 105 ? Guess("İ"):
+    Guess(e.key.toUpperCase());
 });
 
 reset_btn.addEventListener("click", reset);
