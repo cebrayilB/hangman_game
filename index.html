@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <title>Hangman</title>
+</head>
+<body>
+<div class="container">
+  <h1 class="text-lg-center display-2 font-weight-bolder" >Hangman</h1>
+  <div class="float-right"><button type="button" class="btn btn-danger font-weight-bold" style="font-size: larger; ">
+    Chances <span class="badge badge-light " id="chances">6</span>
+  </button></div>
+  <div class="text-center">
+    <img id='hangmanPic' src="./images/0.jpg" alt="">
+    <p class="font-weight-bold" style="font-size: 25px;">Guess the STUDENT'S NAME:</p>
+    <p id="student_name" style="font-size: 30px; font-weight: 700; text-transform: uppercase;"></p>
+    <div id="result-info"></div>
+    <div class="alert alert-info" role="alert" id="info">
+     <strong>GUESSED LETTERS: </strong>
+    </div>
+    <button class="btn btn-warning mt-3" style="font-size: 20px; font-weight: 600;" id="reset">Reset</button>
+  </div> 
+</div>
+
+<script src='./hangman.js'></script>
+</body>
+</html>
