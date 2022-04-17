@@ -66,7 +66,7 @@ const checkWIN_OR_LOST = () => {
   if (wordStatus === answer) {
     result_info.innerHTML = `
     <div class="alert alert-success font-weight-bolder" role="alert">
-    YOU WON!!! YOU GOT THE ANSWER IN <span style="color:red; font-size: 20px">${chances}</span> GUESSES
+    YOU WON!!! YOU JUST MADE <span style="color:red; font-size: 20px">${6-chances}</span> WRONG GUESSES
   </div>`;
     game_end = true;
     setTimeout(reset, 6000);
